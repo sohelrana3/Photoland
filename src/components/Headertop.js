@@ -21,10 +21,13 @@ const Headertop = () => {
                     </div>
                 </div>
 
-                <div className="flex">
-                    <ul>
+                <div>
+                    <ul className="flex gap-x-6">
                         <Link to='#'>
-                            <li className="text-white">Theme FAQ"s</li>
+                            <li className="text-white text-xs font-open font-normal hover:text-red-500">Theme FAQ"s</li>
+                        </Link>
+                        <Link to='#'>
+                            <li className="text-white text-xs font-open font-normal hover:text-red-500">Need Help?</li>
                         </Link>
                     </ul>
                 </div>
