@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Headertop = () => {
@@ -14,7 +15,7 @@ const Headertop = () => {
                         </span>
                     </div>
                     <div className="flex items-center gap-x-2">
-                        <BsFillTelephoneFill className="text-white font-normal text-xs font-open" />
+                        <AiOutlineMail className="text-white font-normal text-xs font-open" />
                         <span className="text-white font-normal text-xs font-open">
                             +88012 3456 7894
                         </span>
