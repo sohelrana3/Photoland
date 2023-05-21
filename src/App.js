@@ -8,16 +8,16 @@ import Products from "./pages/Products";
 import Search from "./pages/Search";
 
 // components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Headertop from "./components/Headertop";
 
 // Layouts
 const Layouts = () => {
     return (
         <div>
-            <Header />
+          <Headertop />
+         <h2>hh</h2>
             <Outlet />
-            <Footer />
+         
         </div>
     );
 };
