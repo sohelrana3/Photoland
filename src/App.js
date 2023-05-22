@@ -9,38 +9,40 @@ import Search from "./pages/Search";
 
 // components
 import Headertop from "./components/Headertop";
+import Footer from "./components/Footer";
+import Navbat from "./components/Navbat";
 
 // Layouts
 const Layouts = () => {
     return (
         <div>
-          <Headertop />
-         <h2>hh</h2>
+            <Headertop />
+            <Navbat />
             <Outlet />
-         
+            <Footer />
         </div>
     );
 };
 
 // create react ruter
 const router = createBrowserRouter([
-  {
-    element: <Layouts />,
-    children: [
-      {path: '/', element: <Home />},
-      {path: '/products', element: <ProductsDetail />},
-      {path: '/product', element: <Products />},
-      {path: '/search', element: <Search />},
-    ],
-  },
+    {
+        element: <Layouts />,
+        children: [
+            { path: "/", element: <Home /> },
+            { path: "/products", element: <ProductsDetail /> },
+            { path: "/product", element: <Products /> },
+            { path: "/search", element: <Search /> },
+        ],
+    },
 ]);
 
 const App = () => {
     return (
-      <div>
-        <RouterProvider router={router} />
-      </div>
-    )
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    );
 };
 
 export default App;
