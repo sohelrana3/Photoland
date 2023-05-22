@@ -10,7 +10,7 @@ import Search from "./pages/Search";
 // components
 import Headertop from "./components/Headertop";
 import Footer from "./components/Footer";
-import Navbat from "./components/Navbat";
+import Navbat from "./components/Navbar";
 
 // Layouts
 const Layouts = () => {
